@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatosActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/stDattos"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/stDattos"
+        app:layout_constraintBottom_toTopOf="@+id/btnmodificar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/stmatricula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtmatricula"
+                android:textColor="@color/teal_700"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/txtmatricula"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="@string/stmatricula"
+                android:importantForAutofill="no"
+                android:inputType="numberSigned"
+                android:textColorHint="#757575"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/stnombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtnombre"
+                android:textColor="@color/teal_700"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/txtnombre"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="@string/stnombre"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColorHint="#757575"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/stedad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtedad"
+                android:textColor="@color/teal_700"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/txtedad"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="@string/stedad"
+                android:importantForAutofill="no"
+                android:inputType="numberSigned"
+                android:textColorHint="#757575"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/stsemestre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtsemestre"
+                android:textColor="@color/teal_700"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/txtsemestre"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="@string/stsemestre"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColorHint="#757575"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/stpromedio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtpromedio"
+                android:textColor="@color/teal_700"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/txtpromedio"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="@string/stpromedio"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:textColorHint="#757575"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/stestado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtestado"
+                android:textColor="@color/teal_700"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/txtestado"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:hint="@string/stestado"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColorHint="#757575" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnmodificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:onClick="btnmodificar"
+        android:text="@string/stmodificar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btneliminar"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toEndOf="@+id/btnagregar" />
+
+    <Button
+        android:id="@+id/btnagregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="btnagregar"
+        android:text="@string/stagregar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btneliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="btnelimina"
+        android:text="@string/steliminar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <GridView
+        android:id="@+id/gridDatos"
+        android:layout_width="400dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="24dp"
+        android:numColumns="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="276dp"
+        android:text="@string/stinfo"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+</android.support.constraint.ConstraintLayout>

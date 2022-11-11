@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">GERHM0171</string>
+    <string name="stagregar">AGREGAR</string>
+    <string name="stmodificar">MODIFICAR</string>
+    <string name="steliminar">ELIMINAR</string>
+    <string name="stDattos">DATOS</string>
+    <string name="stinfo">INFORMACIÓN</string>
+    <string name="stmatricula">Matricula</string>
+    <string name="stnombre">Nombre</string>
+    <string name="stedad">Edad</string>
+    <string name="stsemestre">Semestre</string>
+    <string name="stpromedio">Promedio</string>
+    <string name="stestado">Estado</string>
+
+    <string name="txtmatricula">Matricula</string>
+    <string name="txtnombre">Nombre</string>
+    <string name="txtedad">Edad</string>
+    <string name="txtsemestre">Semestre</string>
+    <string name="txtpromedio">Promedio</string>
+    <string name="txtestado">Estado</string>
+
+    <string name="stcancelar">CANCELAR</string>
+    <string name="stregresar">REGRESAR</string>
+    <string name="staceptar">ACEPTAR</string>
+</resources>
